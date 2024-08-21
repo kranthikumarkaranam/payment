@@ -1,0 +1,15 @@
+{
+	"preset": "react-native",
+	"reporters": [
+		"default",
+		"jest-junit"
+	],
+
+	"transformIgnorePatterns": [
+		"node_modules/(?!@react-native|react-native)"
+	],
+	"testEnvironment": "jsdom",
+	"setupFilesAfterEnv": [
+		"@testing-library/jest-native/extend-expect"
+	]
+}
